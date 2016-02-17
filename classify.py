@@ -30,7 +30,7 @@ caffe.set_mode_cpu()
 
 # モデルの読み込み
 net = caffe.Classifier(MODEL_FILE, PRETRAINED, channel_swap = [0],
-                        image_dims = (28, 28))
+                        image_dims = (50, 50))
 
 # 入力画像の読み込み
 input_image = caffe.io.load_image(IMAGE_FILE, color = True)
