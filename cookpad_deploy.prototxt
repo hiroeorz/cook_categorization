@@ -3,7 +3,7 @@ name: "Cookpad"
 ## 入力として、縦横50pixelの画像を受け取る。(-> data)
 input: "data"
 input_dim: 1
-input_dim: 1
+input_dim: 3
 input_dim: 50
 input_dim: 50
 
