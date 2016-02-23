@@ -29,7 +29,7 @@ IMAGE_FILE = argvs[1]
 # caffe.set_mode_cpu()
 
 # モデルの読み込み
-net = caffe.Classifier(MODEL_FILE, PRETRAINED, channel_swap = [0],
+net = caffe.Classifier(MODEL_FILE, PRETRAINED, channel_swap = (2,1,0),
                         image_dims = (50, 50))
 
 # 入力画像の読み込み
