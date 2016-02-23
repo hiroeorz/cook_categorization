@@ -22,7 +22,7 @@ $ make
 
 ```
 $ export PYTHONPATH=~/caffe/python:${PYTHONPATH} 
-``
+```
 
 分類する画像を `test.jpg` とすると。
 
