@@ -26,7 +26,7 @@ if argc < 2:
 IMAGE_FILE = argvs[1]
 
 # CPUモードを設定
-caffe.set_mode_cpu()
+# caffe.set_mode_cpu()
 
 # モデルの読み込み
 net = caffe.Classifier(MODEL_FILE, PRETRAINED, channel_swap = [0],

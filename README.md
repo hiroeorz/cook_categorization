@@ -16,3 +16,16 @@
 $ make
 ```
 
+## 分類
+
+分類実行前にパスを通す。
+
+```
+$ export PYTHONPATH=~/caffe/python:${PYTHONPATH} 
+``
+
+分類する画像を `test.jpg` とすると。
+
+```
+$ pychon classify.py test.jpg
+``` 
