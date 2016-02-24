@@ -1,0 +1,6 @@
+#!/bin/sh
+
+IMAGE_PATH=$1
+
+export PYTHONPATH=~/caffe/python:${PYTHONPATH}
+python classify.py $IMAGE_PATH
