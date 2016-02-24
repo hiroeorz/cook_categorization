@@ -23,6 +23,26 @@ $ cd ~/caffe/cook_categorization
 $ make
 ```
 
+### make パラメータ
+
+学習用DBと学習モデルの削除
+
+```
+$ make clean
+```
+
+`train.txt` と画像ファイルを元に学習用DB (LMDB)の生成
+
+```
+$ make lmdb
+```
+
+学習を実施し、学習モデルを生成する。
+
+```
+$ make model
+```
+
 ## 分類
 
 分類実行前にパスを通す。
