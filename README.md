@@ -42,3 +42,19 @@ $ convert -geometry 50x50! test.jpg test_50x50.jpg
 ```
 $ python classify.py test_50x50.jpg
 ``` 
+
+## メモ
+
+### libdc1394に関するエラー
+
+分類時に以下のようなエラーが出る場合
+
+```
+libdc1394 error: Failed to initialize libdc1394
+```
+
+以下を実行しておく。
+
+```
+sudo ln /dev/null /dev/raw1394
+```
