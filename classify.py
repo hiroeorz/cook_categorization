@@ -7,6 +7,13 @@ matplotlib.use('Agg')
 import numpy as np
 import sys
 import os
+
+# 0 - debug
+# 1 - info (still a LOT of outputs)
+# 2 - warnings
+# 3 - errors 
+os.environ['GLOG_minloglevel'] = '2'
+
 import caffe
 
 # デプロイ用ネットワークファイルへのパス
@@ -39,6 +46,6 @@ input_image = caffe.io.load_image(IMAGE_FILE, color = True)
 prediction = net.predict([input_image], False)
 
 # 予測結果を出力
-print("prediction shape: {}".format(prediction[0].shape))
-print("predected class: {}".format(prediction[0].argmax()))
+#print("prediction shape: {}".format(prediction[0].shape))
+print("{}".format(prediction[0].argmax()))
 
