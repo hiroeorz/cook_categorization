@@ -9,6 +9,11 @@
     $ git clone https://github.com/hiroeorz/cook_categorization.git
     ```
 
+3. 分類対象の画像は、あらかじめリサイズが必要なため、必要に応じてツールをインストールしておく
+    ```
+    $ sudo apt-get install imagemagick
+    ```
+
 ## 学習
 
 学習は以下の手順で行う
@@ -26,8 +31,14 @@ $ make
 $ export PYTHONPATH=~/caffe/python:${PYTHONPATH} 
 ```
 
-分類する画像を `test.jpg` とすると。
+分類を実行する画像のリサイズを行う。分類する画像を `test.jpg` とすると。
 
 ```
-$ pychon classify.py test.jpg
+$ convert -geometry 50x50! test.jpg test_50x50.jpg
+```
+
+リサイズした画像に対して分類を実行する。
+
+```
+$ pychon classify.py test_50x50.jpg
 ``` 
