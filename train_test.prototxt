@@ -8,7 +8,8 @@ layer {
     phase: TRAIN
   }
   transform_param {
-    scale: 0.00390625
+    scale: 0.0053
+    mirror: 1
   }
   data_param {
     source: "train_lmd"
@@ -25,11 +26,12 @@ layer {
     phase: TEST
   }
   transform_param {
-    scale: 0.00390625
+    scale: 0.0053
+    mirror: 1
   }
   data_param {
     source: "train_lmd"
-    batch_size: 17
+    batch_size: 100
     backend: LMDB
   }
 }
