@@ -2,7 +2,7 @@ all: clean lmd model
 
 CONVERTER=../build/tools/convert_imageset
 CAFFE=../build/tools/caffe
-RESIZE=50
+RESIZE=100
 
 clean:
 	rm -rf models

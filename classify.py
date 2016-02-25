@@ -15,7 +15,7 @@ import os
 os.environ['GLOG_minloglevel'] = '0'
 import caffe
 
-resize_size = 50
+resize_size = 100
 
 # デプロイ用ネットワークファイルへのパス
 MODEL_FILE = "./deploy.prototxt"
