@@ -15,3 +15,10 @@ images/30-303/972f83a177389bcf770e987359b9e72b.jpg 2
 images/30-303/8807fdb3fbffa088c322fc85ce3327a5.jpg 2
 images/30-303/a4186606548a167b2667d971efd3b5d0.jpg 2
 images/30-303/dcc5b1127763428e4998378ba494293c.jpg 2
+images/30-304/omuraice01.jpg 3
+images/30-304/omuraice02.jpg 3
+images/30-304/omuraice03.jpg 3
+images/30-304/omuraice04.jpg 3
+images/30-304/omuraice05.jpg 3
+images/30-304/omuraice06.jpg 3
+images/30-304/omuraice07.jpg 3

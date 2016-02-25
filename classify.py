@@ -12,15 +12,16 @@ import os
 # 1 - info (still a LOT of outputs)
 # 2 - warnings
 # 3 - errors 
-os.environ['GLOG_minloglevel'] = '2'
-
+os.environ['GLOG_minloglevel'] = '0'
 import caffe
 
+resize_size = 50
+
 # デプロイ用ネットワークファイルへのパス
-MODEL_FILE = "./cookpad_deploy.prototxt"
+MODEL_FILE = "./deploy.prototxt"
 
 # 学習済みモデルへのパス
-PRETRAINED = "./models/cookpad_snapshot_iter_5000.caffemodel"
+PRETRAINED = "./models/snapshot_iter_20000.caffemodel"
 
 # 予測を行う画像ファイルへのパスをコマンドライン引数から受け取る
 argvs = sys.argv
@@ -37,7 +38,7 @@ IMAGE_FILE = argvs[1]
 
 # モデルの読み込み
 net = caffe.Classifier(MODEL_FILE, PRETRAINED, channel_swap = (2,1,0),
-                        image_dims = (50, 50))
+                        image_dims = (resize_size, resize_size))
 
 # 入力画像の読み込み
 input_image = caffe.io.load_image(IMAGE_FILE, color = True)
