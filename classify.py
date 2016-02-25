@@ -12,7 +12,7 @@ import os
 # 1 - info (still a LOT of outputs)
 # 2 - warnings
 # 3 - errors 
-os.environ['GLOG_minloglevel'] = '0'
+os.environ['GLOG_minloglevel'] = '2'
 import caffe
 
 resize_size = 100

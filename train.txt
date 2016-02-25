@@ -22,3 +22,12 @@ images/30-304/omuraice04.jpg 3
 images/30-304/omuraice05.jpg 3
 images/30-304/omuraice06.jpg 3
 images/30-304/omuraice07.jpg 3
+images/30-305/guratan01.jpg 4
+images/30-305/guratan02.jpg 4
+images/30-305/guratan03.jpg 4
+images/30-305/guratan04.jpg 4
+images/30-305/guratan05.jpg 4
+images/30-305/guratan06.jpg 4
+images/30-305/guratan07.jpg 4
+images/30-305/guratan08.jpg 4
+
