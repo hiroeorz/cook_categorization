@@ -60,8 +60,8 @@ $ convert -geometry 50x50! test.jpg test_50x50.jpg
 リサイズした画像に対して分類を実行する。
 
 ```
-$ python classify.py test_50x50.jpg
-``` 
+$ ./classify test_50x50.jpg
+```
 
 ## メモ
 
